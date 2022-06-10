@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing Page for a Tote Bag" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Bolsa | Don't Worry About The Last Bag, Focus on the Next</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/9a73312c0b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="px">
+      <h3 class="logo">
+        <a href="#"
+          ><i class="fa-solid fa-bag-shopping"></i> <span>Bolsa</span></a
+        >
+      </h3>
+      <ul class="nav_links">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#collection">Collection</a>
+        </li>
+        <li>
+          <a href="#shop">Shop</a>
+        </li>
+        <li>
+          <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+      <div class="menu_btn" role="menu button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="mobile_menu" role="menu">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#collection">Collection</a>
+        </li>
+        <li>
+          <a href="#shop">Shop</a>
+        </li>
+
+        <span class="close" role="button" id="menuclose">
+          <i class="fa-solid fa-close"></i>
+        </span>
+      </ul>
+    </div>
+    <main class="px">
+      <div class="hero">
+        <h1>Look Stylish, Be Stylish!</h1>
+        <div class="hero_image">
+          <img
+            src="./images/hero.jpg"
+            alt="A woman carrying a coffe cup and tote bag"
+          />
+        </div>
+        <p>
+          Perfect Tote Bags, unlike your regular handbags secured with closures
+          and is the best option for your high fashion look
+        </p>
+        <a href="#" class="hero_link">Shop Now</a>
+      </div>
+      <div class="hero_alt">
+        <h1>Bags Designed to Please You!</h1>
+        <div class="hero_image_alt">
+          <img
+            src="./images/girl_with_bag.jpg"
+            alt="A woman carrying a tote bag while standing"
+          />
+        </div>
+        <p>
+          Perfect Tote Bags which are designed to suite and please you, no
+          matter what you want. It is the best option for you high fashion look
+        </p>
+        <a href="#" class="hero_link">See More</a>
+      </div>
+      <div class="hero" id="about">
+        <h1>About Us</h1>
+        <div class="hero_image_in">
+          <img
+            src="./images/bag_collection.jpg"
+            alt="A collection of bags on a shelf"
+          />
+        </div>
+        <p>
+          Bulsa is more than just a bag retail store. Every Customer who walks
+          into our store enjoys curated products as well as remarkable customer
+          service
+        </p>
+        <a href="#" class="hero_link_alt">See More</a>
+      </div>
+      <div class="products">
+        <h1>
+          Our Products
+          <span href="#">See More <i class="fa-solid fa-right-long"></i></span>
+        </h1>
+
+        <div class="products_grid">
+          <div class="product">
+            <div class="product_image">
+              <img
+                src="./images/product_1.jpg"
+                alt="A bag with a white and black striped pattern"
+              />
+            </div>
+            <div class="product_description">
+              <div class="text">
+                <h3>Black Tote Bag</h3>
+                <p>&#x20A6;3,000.00</p>
+              </div>
+              <button class="add_to_cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product_image">
+              <img src="./images/product_2.jpg" alt="A white tote bag" />
+            </div>
+            <div class="product_description">
+              <div class="text">
+                <h3>White Tote Bag</h3>
+                <p>&#x20A6;4,000.00</p>
+              </div>
+              <button class="add_to_cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product_image">
+              <img src="./images/product_3.jpg" alt="A beige tote bag" />
+            </div>
+            <div class="product_description">
+              <div class="text">
+                <h3>Beige Tote Bag</h3>
+                <p>&#x20A6;3,000.00</p>
+              </div>
+              <button class="add_to_cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product_image">
+              <img src="./images/product_4.jpg" alt="Off white tote bag" />
+            </div>
+            <div class="product_description">
+              <div class="text">
+                <h3>Off White Tote Bag</h3>
+                <p>&#x20A6;6,000.00</p>
+              </div>
+              <button class="add_to_cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <h1>Our Customer Reviews</h1>
+        <div class="reviews_grid">
+          <div class="review">
+            <div class="review_image">
+              <img src="./images/reviewer_1.jpg" alt="Girl with glasses" />
+            </div>
+            <h3>Princess Diana</h3>
+            <p>Fashion Designer</p>
+
+            <blockquote>
+              &quot; Bulsa is more than just a bag retail store. Every Customer
+              who walks into our store enjoys curated products as well as
+              remarkable customer service &quot;
+            </blockquote>
+          </div>
+        </div>
+        <div class="arrows">
+          <span id="review_left" class="fa-solid fa-circle-arrow-left"> </span>
+          <span id="review_right" class="fa-solid fa-circle-arrow-right">
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer class="px">
+      <ul>
+        <h4>About Us</h4>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Talk To Us</a></li>
+      </ul>
+      <ul>
+        <h4>Contact Us</h4>
+        <li><a href="tel:">0700 000 0000</a></li>
+        <li><a href="mailto:lihemen@gmail.com">lihemen@gmail.com</a></li>
+      </ul>
+      <ul>
+        <h4>Social Media</h4>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+      <ul>
+        <h4>Office</h4>
+        <li>Someplace in the middle of Neverland</li>
+      </ul>
+    </footer>
+    <div class="copy">
+      <p>
+        Collaboration between
+        <a href="https://hemense.net" target="_blank" rel="noreferrer noopener"
+          >Lihemen&nbsp;</a
+        >&amp;
+        <a
+          href="https://behance.net/nora_eboesomi"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Nhorah</a
+        >
+        <br />
+        Copyright &copy;
+        <span id="cp_year"></span>
+        <br />
+        Inspired by
+        <a
+          href="https://www.behance.net/gallery/145104575/Landing-Page-for-a-Tote-Bag-Store"
+          target="_blank"
+          rel="noreferrer noopener"
+          >@Nhorah</a
+        >
+      </p>
+    </div>
+    <!--jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
