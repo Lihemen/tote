@@ -20,10 +20,11 @@ document.querySelector("#cp_year").innerHTML = new Date().getFullYear();
 $(".products_grid").slick({
   dots: false,
   infinite: true,
-  speed: 300,
+  speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
   adaptiveHeight: true,
+  autoplay: true,
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
   responsive: [
@@ -50,8 +51,25 @@ $(".products_grid").slick({
         slidesToScroll: 1,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+  ],
+});
+
+$(".reviews_grid").slick({
+  dots: false,
+  infinite: false,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: $("#reviewLeft"),
+  nextArrow: $("#reviewRight"),
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+      },
+    },
   ],
 });

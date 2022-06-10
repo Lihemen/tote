@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Bolsa | Don't Worry About The Last Bag, Focus on the Next</title>
 
     <!-- FONT AWESOME -->
@@ -81,36 +81,36 @@
     </div>
     <main class="px">
       <div class="hero">
-        <h1>Look Stylish, Be Stylish!</h1>
-        <div class="hero_image">
+        <h1 data-anim="slide-right">Look Stylish, Be Stylish!</h1>
+        <div class="hero_image" data-anim="slide-down">
           <img
             src="./images/hero.jpg"
             alt="A woman carrying a coffe cup and tote bag"
           />
         </div>
-        <p>
+        <p data-anim="slide-right">
           Perfect Tote Bags, unlike your regular handbags secured with closures
           and is the best option for your high fashion look
         </p>
-        <a href="#" class="hero_link">Shop Now</a>
+        <a href="#" class="hero_link" data-anim="slide-right">Shop Now</a>
       </div>
       <div class="hero_alt">
-        <h1>Bags Designed to Please You!</h1>
-        <div class="hero_image_alt">
+        <h1 data-anim="fade">Bags Designed to Please You!</h1>
+        <div class="hero_image_alt" data-anim="slide-right">
           <img
             src="./images/girl_with_bag.jpg"
             alt="A woman carrying a tote bag while standing"
           />
         </div>
-        <p>
+        <p data-anim="slide-left">
           Perfect Tote Bags which are designed to suite and please you, no
           matter what you want. It is the best option for you high fashion look
         </p>
         <a href="#" class="hero_link">See More</a>
       </div>
       <div class="hero" id="about">
-        <h1>About Us</h1>
-        <div class="hero_image_in">
+        <h1 data-anim="fade">About Us</h1>
+        <div class="hero_image_in" data-anim="slide-up">
           <img
             src="./images/bag_collection.jpg"
             alt="A collection of bags on a shelf"
@@ -192,15 +192,31 @@
         </div>
       </div>
       <div class="reviews">
-        <h1>Our Customer Reviews</h1>
+        <h1>Our Customer' Reviews</h1>
         <div class="reviews_grid">
           <div class="review">
             <div class="review_image">
               <img src="./images/reviewer_1.jpg" alt="Girl with glasses" />
             </div>
-            <h3>Princess Diana</h3>
-            <p>Fashion Designer</p>
+            <div class="review_title">
+              <h3>Princess Diana</h3>
+              <p>Fashion Designer</p>
+            </div>
 
+            <blockquote>
+              &quot; Bulsa is more than just a bag retail store. Every Customer
+              who walks into our store enjoys curated products as well as
+              remarkable customer service &quot;
+            </blockquote>
+          </div>
+          <div class="review">
+            <div class="review_image">
+              <img src="./images/girl_with_bag.jpg" alt="Girl with glasses" />
+            </div>
+            <div class="review_title">
+              <h3>Princess Diana</h3>
+              <p>Fashion Designer</p>
+            </div>
             <blockquote>
               &quot; Bulsa is more than just a bag retail store. Every Customer
               who walks into our store enjoys curated products as well as
@@ -209,8 +225,11 @@
           </div>
         </div>
         <div class="arrows">
-          <span id="review_left" class="fa-solid fa-circle-arrow-left"> </span>
-          <span id="review_right" class="fa-solid fa-circle-arrow-right">
+          <span id="reviewLeft" role="button"
+            ><i class="fa-solid fa-circle-arrow-left"></i>
+          </span>
+          <span id="reviewRight" role="button"
+            ><i class="fa-solid fa-circle-arrow-right"></i>
           </span>
         </div>
       </div>
@@ -279,5 +298,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="script.js"></script>
+    <script src="./animations.js"></script>
   </body>
 </html>
