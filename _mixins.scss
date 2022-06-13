@@ -71,7 +71,7 @@ $sizes: 12;
   }
 }
 
-@mixin animator($name, $duration: 1s, $style: ease) {
+@mixin animator($name, $duration: 1.5s, $style: ease) {
   animation-name: $name;
   animation-duration: $duration;
   animation-timing-function: $style;

@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/images/product_1.jpg",
+    "name": "Black Tote Bag",
+    "price": "3000",
+    "_id": 1
+  },
+  {
+    "image": "/images/product_2.jpg",
+    "name": "White Tote Bag",
+    "price": "4000",
+    "_id": 2
+  },
+  {
+    "image": "/images/product_3.jpg",
+    "name": "Beige Tote Bag",
+    "price": "3000",
+    "_id": 3
+  },
+  {
+    "image": "/images/product_4.jpg",
+    "name": "Off White Tote Bag",
+    "price": "6000",
+    "_id": 4
+  }
+]

@@ -1,14 +1,11 @@
 $primary_color: #f9d8cd;
-$primary_accent: #fdf0ec;
+$primary_accent: #fcf3f0;
 $secondary_color: #60220b;
 $menu_color_1: #ef9676;
 $menu_color_2: #f3ae95;
 $bg2: #fce8e2;
 
 @import "./mixins";
-
-@include padding-classes;
-@include margin-classes;
 
 *,
 *::after,
@@ -189,6 +186,100 @@ header {
   }
 }
 
+.cart_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparentize($color: $primary_color, $amount: 0.3);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  z-index: 999;
+  overflow: scroll;
+  &.show {
+    transform: translateX(0%);
+  }
+  .cart {
+    float: right;
+    background-color: #60220b;
+    color: #fdf0ec;
+    height: 100%;
+    width: 60%;
+    position: relative;
+
+    .cart_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+      h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        transform: translateY(1rem) translateX(-100%);
+      }
+      svg {
+        cursor: pointer;
+        padding: 5px;
+      }
+    }
+    .cart_body {
+      padding: 0 1rem;
+
+      .cart_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cart_item_img {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          img {
+            width: 30%;
+            height: 30%;
+            max-width: 100px;
+            max-height: 100px;
+          }
+        }
+      }
+
+      #cart_remove,
+      #add_qty,
+      #sub_qty {
+        cursor: pointer;
+      }
+
+      .cart_controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+    }
+    .cart_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cart_total {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+      .cart_clear {
+        cursor: pointer;
+        outline: none;
+        border: 1px solid $menu_color_1;
+        padding: 1rem 2rem;
+        color: $secondary_color;
+      }
+    }
+  }
+}
+main {
+  overflow-x: clip;
+}
 .hero,
 .hero_alt {
   display: flex;
@@ -279,6 +370,7 @@ header {
   }
 }
 .hero_alt {
+  position: relative;
   h1 {
     font-size: 3.4em;
   }
@@ -494,13 +586,16 @@ footer {
   }
 }
 .copy {
-  background-color: $primary_color;
+  background-color: $bg2;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   a {
     color: #60220b;
     text-decoration: underline;
     font-weight: 600;
+  }
+  @include desktop {
+    background-color: $primary_color;
   }
 }
 
@@ -523,10 +618,12 @@ footer {
 }
 
 .slide-left {
+  display: block;
   @include slideLeft(100%, initial);
 }
 
 .slide-right {
+  display: block;
   @include slideRight(-100%, initial);
 }
 

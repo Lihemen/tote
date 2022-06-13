@@ -79,6 +79,43 @@
         </span>
       </ul>
     </div>
+    <div class="cart_overlay">
+      <div class="cart">
+        <div class="cart_header">
+          <span class="close" role="button" id="cartclose">
+            <i class="fa-solid fa-close"></i>
+          </span>
+          <h3>Cart</h3>
+        </div>
+        <ul class="cart_body">
+          <li class="cart_item">
+            <div class="cart_item_img">
+              <span>Black Tote Bag</span>
+              <img src="images/product_1.jpg" alt="Tote Bag" />
+              <span id="cart_remove"
+                ><i class="fa-solid fa-trash"></i>remove</span
+              >
+            </div>
+            <div class="cart_controls">
+              <span id="add_qty">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+              <span id="qty">1</span>
+              <span id="sub_qty">
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <div class="cart_footer">
+          <div class="cart_total">
+            <span>Total: &#x20A6;</span>
+            <span class="cart_total_price">0.00</span>
+          </div>
+          <button class="cart_clear">Clear Cart</button>
+        </div>
+      </div>
+    </div>
     <main class="px">
       <div class="hero">
         <h1 data-anim="slide-right">Look Stylish, Be Stylish!</h1>
@@ -109,21 +146,21 @@
         <a href="#" class="hero_link">See More</a>
       </div>
       <div class="hero" id="about">
-        <h1 data-anim="fade">About Us</h1>
+        <h1>About Us</h1>
         <div class="hero_image_in" data-anim="slide-up">
           <img
             src="./images/bag_collection.jpg"
             alt="A collection of bags on a shelf"
           />
         </div>
-        <p>
+        <p data-anim="slide-left">
           Bulsa is more than just a bag retail store. Every Customer who walks
           into our store enjoys curated products as well as remarkable customer
           service
         </p>
         <a href="#" class="hero_link_alt">See More</a>
       </div>
-      <div class="products">
+      <div class="products" id="collection">
         <h1>
           Our Products
           <span href="#">See More <i class="fa-solid fa-right-long"></i></span>
@@ -142,7 +179,7 @@
                 <h3>Black Tote Bag</h3>
                 <p>&#x20A6;3,000.00</p>
               </div>
-              <button class="add_to_cart">
+              <button class="add_to_cart" data-product-id="1">
                 <i class="fa-solid fa-cart-plus"></i>
               </button>
             </div>
@@ -156,7 +193,7 @@
                 <h3>White Tote Bag</h3>
                 <p>&#x20A6;4,000.00</p>
               </div>
-              <button class="add_to_cart">
+              <button class="add_to_cart" data-product-id="2">
                 <i class="fa-solid fa-cart-plus"></i>
               </button>
             </div>
@@ -170,7 +207,7 @@
                 <h3>Beige Tote Bag</h3>
                 <p>&#x20A6;3,000.00</p>
               </div>
-              <button class="add_to_cart">
+              <button class="add_to_cart" data-product-id="3">
                 <i class="fa-solid fa-cart-plus"></i>
               </button>
             </div>
@@ -184,14 +221,14 @@
                 <h3>Off White Tote Bag</h3>
                 <p>&#x20A6;6,000.00</p>
               </div>
-              <button class="add_to_cart">
+              <button class="add_to_cart" data-product-id="4">
                 <i class="fa-solid fa-cart-plus"></i>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="reviews">
+      <div class="reviews" data-anim="fade">
         <h1>Our Customer' Reviews</h1>
         <div class="reviews_grid">
           <div class="review">
@@ -244,19 +281,50 @@
       </ul>
       <ul>
         <h4>Contact Us</h4>
-        <li><a href="tel:">0700 000 0000</a></li>
+        <li><a href="tel:">0701 105 6442</a></li>
         <li><a href="mailto:lihemen@gmail.com">lihemen@gmail.com</a></li>
       </ul>
       <ul>
         <h4>Social Media</h4>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li>
+          <a
+            href="https://instagram.com/lihemen"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/MrHilz"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/li_hemen"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/hemense-lan"
+            target="_blank"
+            rel="noreferrer noopener"
+            >LinkedIn</a
+          >
+        </li>
       </ul>
       <ul>
         <h4>Office</h4>
-        <li>Someplace in the middle of Neverland</li>
+        <li>
+          A little town in East Blue where the pirate king was born and the
+          greatest story ever told begun
+        </li>
       </ul>
     </footer>
     <div class="copy">
