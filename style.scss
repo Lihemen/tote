@@ -58,6 +58,10 @@ h1,
 h3 {
   font-family: "Playfair Display", serif;
   line-height: 1.5;
+  font-style: normal;
+  @include desktop {
+    font-style: italic;
+  }
 }
 .animate {
   animation-play-state: running !important;
@@ -287,7 +291,6 @@ main {
   align-items: flex-start;
   margin: 4rem 0;
   position: relative;
-  min-height: 500px;
   width: 100%;
   h1 {
     font-size: 3.5rem;
@@ -307,6 +310,9 @@ main {
       border-radius: 0 0 50% 50%;
       border: 6px solid $menu_color_2;
     }
+  }
+  .hero_image_in {
+    display: none;
   }
   .hero_image_alt {
     width: 100%;
@@ -336,6 +342,11 @@ main {
       filter: brightness(0.9);
     }
   }
+  @include note {
+    .hero_image_in {
+      display: block;
+    }
+  }
   @include desktop {
     .hero_image {
       position: absolute;
@@ -362,10 +373,14 @@ main {
       margin-top: 1rem;
     }
     h1 {
-      font-style: italic;
       width: 40%;
       font-size: 5rem;
       margin-top: 3.5rem;
+    }
+  }
+  @include desktop {
+    & {
+      min-height: 500px;
     }
   }
 }
@@ -424,7 +439,6 @@ main {
 .products {
   margin: 2rem 0;
   h1 {
-    font-style: italic;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -469,6 +483,7 @@ main {
       h3 {
         font-size: 1.3em;
         margin-bottom: 10px;
+        font-style: normal;
       }
       p {
         font-size: 1.3em;
@@ -496,7 +511,6 @@ main {
   position: relative;
   h1 {
     flex: 1;
-    // font-style: italic;
     font-size: 4ch;
     width: 80%;
   }
@@ -526,6 +540,7 @@ main {
         margin-left: 1rem;
         h3 {
           margin-bottom: 1rem;
+          font-style: normal;
         }
       }
     }
